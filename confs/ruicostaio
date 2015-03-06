@@ -24,7 +24,7 @@ server {
 
      location /presentations/ {
         autoindex on;
-        root  /home/ubuntu/presentations/;
+        root  /home/ubuntu/;
      }
 
     location /nginx_status {

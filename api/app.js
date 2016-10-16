@@ -1,1 +1,73 @@
-  
+var strava = require('strava-v3');
+var curl = require('curlrequest');
+
+var stats = {
+  runs: {
+    ytd_runs: 0,
+    ytd_distance: 0,
+    ytd_time: 0
+  },
+  flights_info: {
+    flights: {
+      total: 0,
+      domestic: 0,
+      international: 0
+    },
+    distance: {
+      total_km: 0,
+      total_miles: 0,
+      earth_laps: 0
+    },
+    flight_time: {
+      total_hours: {
+        hours: 0,
+        minutes: 0
+      },
+      total_days: 0,
+      total_weeks: 0
+    }
+  }
+}
+strava.athletes.stats({
+  id: 8535704
+}, function (err, payload) {
+  if (!err) {
+    stats.runs.ytd_runs = payload.ytd_run_totals.count;
+    stats.runs.ytd_distance = parseFloat(payload.ytd_run_totals.distance) / 1000
+    stats.runs.ytd_time = payload.ytd_run_totals.elapsed_time
+    console.log(stats.runs.ytd_runs + " runs in 2016. with a total of " + stats.runs.ytd_distance + " kms.")
+  } else {
+    console.log(err);
+  }
+});
+
+
+
+var options = {
+  url: 'http://flightdiary.net/ruicosta/2016',
+  include: true
+};
+
+curl.request(options, function (err, parts) {
+  parts = parts.split('\n');
+  var counter = 0
+  for (var i = 0; i < parts.length; i++) {
+    if (parts[i].indexOf("profile-main-data") > 0) {
+
+      stats.flights_info.flights.total = parseInt(parts[i + 2].split("<h2>")[1].split("<span")[0]);
+      stats.flights_info.flights.domestic = parseInt(parts[i + 3].split("<p>")[1].split("domestic")[0]);
+      stats.flights_info.flights.international = parseInt(parts[i + 4].split("\t")[3].split("international")[0]);
+      stats.flights_info.distance.total_km = parseInt(parts[i + 7].split("<h2>")[1].split("<span")[0].replace(" ", ""));
+      stats.flights_info.distance.total_miles = parseInt(parts[i + 8].split("<p>")[1].split("miles")[0].replace(" ", ""));
+      stats.flights_info.distance.earth_laps = parseFloat(parts[i + 9].split("\t")[3].split("x")[0]);
+      stats.flights_info.flight_time.total_hours.hours = parseInt(parts[i + 12].split("<h2>")[1].split("min")[0].split('<span class="unit">h</span>')[0]);
+      stats.flights_info.flight_time.total_hours.minutes = parseInt(parts[i + 12].split("<h2>")[1].split("min")[0].split('<span class="unit">h</span>')[1].split("<span")[0]);
+      stats.flights_info.flight_time.total_days = parseFloat(parts[i + 13].split("<p>")[1].split("days")[0]);;
+      stats.flights_info.flight_time.total_weeks = parseInt(parts[i + 14].split("\t")[3].split("weeks")[0]);;
+      break;
+    }
+
+  }
+  console.log(JSON.stringify(stats))
+
+});

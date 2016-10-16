@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "curlrequest": "^0.5.7",
     "strava-v3": "^1.12.1"
   }
 }

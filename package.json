@@ -1,0 +1,8 @@
+{
+  "name": "ruicosta.io",
+  "version": "1.0.0",
+  "dependencies": {
+    "strava-v3": "^1.12.1"
+  }
+}
+

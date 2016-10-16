@@ -1,0 +1,14 @@
+{
+  "name": "ruicosta.io.api",
+  "version": "1.0.0",
+  "description": "API to get data from other APIs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "strava-v3": "^1.12.1"
+  }
+}

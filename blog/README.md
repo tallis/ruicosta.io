@@ -1,100 +1,97 @@
-# [Ghost](https://github.com/TryGhost/Ghost) [![Build Status](https://travis-ci.org/TryGhost/Ghost.svg?branch=master)](https://travis-ci.org/TryGhost/Ghost)
+# Odin
 
-Ghost is a free, open, simple blogging platform that's available to anyone who wants to use it. Lovingly created and maintained by [John O'Nolan](http://twitter.com/JohnONolan) + [Hannah Wolfe](http://twitter.com/ErisDS) + an amazing group of [contributors](https://github.com/TryGhost/Ghost/contributors).
+![Ghost version](https://img.shields.io/badge/Ghost-0.7.x-brightgreen.svg?style=flat-square)
+[![Donate](https://img.shields.io/badge/donate-paypal-003087.svg?style=flat-square)](https://www.paypal.me/andreatarquini/5)
 
-Visit the project's website at <http://ghost.org> &bull; docs on <http://support.ghost.org>.
+> A simple theme for Ghost made for geeks, hackers and developers (forked from Casper).
 
-## Getting Involved
+[<img src="http://i.imgur.com/SjCzgwp.jpg">](https://blog.h4t0n.com)
 
-Want to report a bug, request a feature, contribute or translate Ghost? Check out our in-depth guide to [Contributing to Ghost](https://github.com/TryGhost/Ghost/blob/master/CONTRIBUTING.md). We need all the help we can get! You can also join in with our [community](https://github.com/TryGhost/Ghost#community) to keep up-to-date and meet other Ghosters.
+***Do you like my theme? Do you want new features?***  
+Great, we can discuss. Open an issue. Some :coffee::coffee::coffee::coffee: offered with [Paypal](https://www.paypal.me/andreatarquini/5) are appreciated.
 
-## Getting Started
-
-There are a few different ways to install Ghost, take care to use the method which best suits your needs.
-
-**Please note** - the downloadable zip files we provide on [Ghost.org](http://ghost.org/download), the [GitHub releases page](https://github.com/TryGhost/Ghost/releases), and via npm are pre-built packages designed for getting setup quickly. Cloning from the git repository requires you to install several dependencies and build the assets yourself. 
-
-### Install from zip (fastest & best for bloggers)
-
-If you just want to get a Ghost blog running in the fastest time possible, this method is for you.
-
-For detailed instructions for various platforms visit the [Ghost Installation Guide](http://support.ghost.org/installation/). If you get stuck, help is available on [our support site](http://support.ghost.org/).
-
-1. Install [Node.js](http://nodejs.org) - Ghost requires **Node v0.10.x**
-1. Download the latest Ghost package from [Ghost.org](http://ghost.org/download). 
-1. Create a new directory where you would like to run the code, and un-zip the package to that location.
-1. Fire up a Terminal, the Node Command Prompt or shell and change directory to the root of the Ghost application (where config.example.js and index.js are)
-1. run `npm install --production` to install the node dependencies. If you see `error Error: ENOENT` on this step, make sure you are in the project directory and try again.
-1. To start ghost, run `npm start`
-1. Visit `http://localhost:2368/` in your web browser or go to `http://localhost:2368/ghost` to log in
-
-Check out the [Documentation](http://support.ghost.org/) for more detailed instructions, or get in touch via the [forum](http://ghost.org/forum) if you get stuck.
+## Intro
+**Odin** is a very simple fork of the Ghost default theme [Casper](https://github.com/TryGhost/Casper).
+As you know, Casper doesn't have some nice features very useful for developers such as syntax
+highlight, comments and big social sharing features. So I created this theme to fill the gap
+but keeping all the good and minimalistic features of Casper.
 
 
 
-### Install from git
+### Features
+* Casper minimalistic and clean style (without right side menu)
+* Works with Ghost 0.7+
+* Fully responsive (for mobiles and tablets)
+* Home Page Navigation Menu Buttons
+* Google Analytics (easily configurable by code injection in the admin area)
+* [Disqus](https://disqus.com) comments (easily configurable by code injection in the admin area)
+* [Prism](http://prismjs.com/) Syntax Highlight (all languages supported)
+* [RRSSB](https://github.com/kni-labs/rrssb) Extraordinary Social Sharing Buttons
+* [Font Awesome](http://fontawesome.io) home page Social Link Icons (easily configurable by code injection in the admin area)
 
-If you're a developer or someone comfortable getting up and running from a `git clone`, this method is for you.
+### Demo
+I've created and I use this theme for my personal blog at [blog.h4t0n.com](https://blog.h4t0n.com).
 
-If you clone the GitHub repository, you will need to build a number of assets using grunt.
+## Installation
+Installation is the same as other themes, so clone or download the content of this repo inside your Ghost `content/themes/` folder.
 
-Please do **NOT** use the master branch of Ghost in production. If you are using git to deploy to production, please use the latest [release](https://github.com/TryGhost/Ghost/releases) or the [stable](https://github.com/TryGhost/Ghost/tree/stable) branch which contains the latest release.
+```
+# for example
+$ cd /your-ghost-root-directory
+$ git clone https://github.com/h4t0n/odin.git content/themes/odin
+```
 
-#### Quickstart:
+Restart Ghost and select Odin theme from your Admin Area.
 
-1. `npm install -g grunt-cli`
-1. `npm install`
-1. `grunt init` (and `grunt prod` if you want to run Ghost in production mode)
-1. `npm start`
+## Configuration
+No need to configure ***Prism*** or ***RRSSB*** buttons.
 
-Full instructions & troubleshooting tips can be found in the [Contributing Guide](https://github.com/TryGhost/Ghost/blob/master/CONTRIBUTING.md) under the heading "[Working on Ghost Core](https://github.com/TryGhost/Ghost/blob/master/CONTRIBUTING.md#working-on-ghost-core)".
+To add Homepage Navigation Menu Buttons simply add the links in your Navigation Admin Area. They may be useful for static pages (*AboutMe* for example) or for shortcut to your (best) post tags.  
 
-Check out the [Documentation](http://support.ghost.org/) for more detailed instructions, or get in touch via the [forum](http://ghost.org/forum) if you get stuck.
+Odin comes with a default ***favicon*** generated with [Real Favicon Generator](http://realfavicongenerator.net). If you want to add your *favicon* you can generate your own (with [Real Favicon Generator](http://realfavicongenerator.net)) and place downloaded files inside the ***assets/img/favicons*** Odin directory.
 
-### Install from npm
+***Disqus*** comments, ***Google Analytics***  and ***Font Awesome Home Page Social Link Icons*** are disabled by default, but they are easily configurable with *Blog Header Code Injection* inside your Ghost Admin Area.
 
-If you want to build Ghost into a larger node app, or are familiar with using `npm` packages, then this method might be for you.
+```html
+<script>
+// to enable Google Analytics
+var ga_id = 'YOUR-UA-ID_HERE';
 
-`npm install ghost`
-
-Further setup instructions can be found in the [using Ghost as a NPM module](https://github.com/TryGhost/Ghost/wiki/Using-Ghost-as-an-NPM-module) wiki entry.
-
-
-### Upgrading to The Latest Version
-
-Upgrade instructions can be found on the [Ghost Support Site](http://support.ghost.org/how-to-upgrade/)
-
-### Logging in For The First Time
-
-Once you have the Ghost server up and running, you should be able to navigate to `http://localhost:2368/ghost/` from a web browser, where you will be prompted to setup your blog and user account. Once you have entered your desired credentials you will be automatically logged in to the admin area. The setup screen will not be accessible once the process has been completed.
-
-
-## Community
-
-Keep track of Ghost development and Ghost community activity.
-
-* Follow Ghost on [Twitter](http://twitter.com/TryGhost), [Facebook](https://www.facebook.com/ghost) and [Google+](https://plus.google.com/114465948129362706086).
-* Read and subscribe to the [Official Ghost Blog](http://blog.ghost.org) and the [Ghost Development Blog](http://dev.ghost.org).
-* Join in discussions on the [Ghost Forum](http://ghost.org/forum/)
-* Chat with Ghost developers on IRC. We're on `irc.freenode.net`, in the `#Ghost` channel. We have a public meeting every Tuesday at 5:30pm London time.
+// to enable Disqus
+var disqus_shortname = 'YOUR_DISQUS_SHORTNAME'
 
 
-## Versioning
+// to enable Social Link Icons add the social_link object
+// with the pair key/value -> social_network/link
+// NB: the key is used to include the right icon from Font Awesome
+// (you can include any Font Awesome icon)
 
-For transparency and insight into our release cycle, and for striving to maintain backward compatibility, Ghost will be maintained according to the [Semantic Versioning](http://semver.org/) guidelines as much as possible.
+// Example1: default social network icons
+var social_link = {
+    'twitter': 'https://twitter.com/h4t0n',
+    'linkedin': 'https://it.linkedin.com/in/andreatarquini',
+    'github': 'https://github.com/h4t0n',
+    'rss':'https://blog.h4t0n.com/rss/'
+    // you can add more icons
+}
 
-Releases will be numbered with the following format:
+// Example2: squared social network icons
+var social_link = {
+    'twitter-square': 'https://twitter.com/h4t0n',
+    'linkedin-square': 'https://it.linkedin.com/in/andreatarquini',
+    'github-square': 'https://github.com/h4t0n',
+    'rss':'https://blog.h4t0n.com/rss/'
+    // you can add more icons
+}
 
-`<major>.<minor>.<patch>-<build>`
+</script>
 
-Constructed with the following guidelines:
 
-* A new *major* release indicates a large change where backwards compatibility is broken.
-* A new *minor* release indicates a normal change that maintains backwards compatibility.
-* A new *patch* release indicates a bugfix or small change which does not affect compatibility.
-* A new *build* release indicates this is a pre-release of the version.
+```
 
 
 ## Copyright & License
 
-Copyright (c) 2013-2014 Ghost Foundation - Released under the [MIT license](LICENSE).
+Released under the MIT License.  
+Copyright (c) 2016 [Andrea Tarquini](https://blog.h4t0n.com) aka [@h4ton](https://twitter.com/h4t0n)  
+Copyright (c) 2013-2015 Ghost Foundation (for Casper theme substantial portions of code)

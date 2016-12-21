@@ -1,0 +1,246 @@
+<script>
+    function init() {
+        window.addEventListener('scroll', function (e) {
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 10,
+                logo = document.querySelector("logo");
+            if (distanceY > shrinkOn) {
+                classie.add(logo, "logo_small");
+            } else {
+                if (classie.has(logo, "logo_small")) {
+                    classie.remove(logo, "logo_small");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+<style>
+    .logo {
+        background: url(https://scontent.flis2-1.fna.fbcdn.net/hphotos-xfp1/t31.0-8/12493425_10207011963250683_1350355932394677653_o.jpg) no-repeat;
+        background-size: 720px 480px;
+        background-position: -160px 0px;
+        height: 280px;
+        width: 280px;
+        position: absolute;
+        border-radius: 50%;
+        border: 10px solid rgb(112, 150, 156);
+        margin: 20px;
+        overflow: hidden;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    
+    .logo_small {
+        height: 180px;
+        width: 180px;
+    }
+    
+    .logo_big {
+        height: 280px;
+        width: 280px;
+    }
+    
+    .brand {
+        position: fixed;
+        right: 13.5%;
+        bottom: 28.5%;
+        z-index: 0;
+        display: inline-block;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #000;
+        font-size: 50px;
+        line-height: 140px;
+        font-weight: 100;
+        text-align: left;
+    }
+    
+    .floating {
+        right: -48.5%;
+        bottom: 28.5%;
+        position: relative;
+        top: 300px;
+        font-size: 10px;
+        width: 50%;
+        display: inline-block;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    #section_first {
+        background-color: #3B97A6;
+        -moz-background-image: linear-gradient(60deg, rgb(119, 154, 160) 50%, rgb(112, 150, 156) 50%);
+        -webkit-background-image: linear-gradient(60deg, rgb(119, 154, 160) 50%, rgb(112, 150, 156) 50%);
+        -o-background-image: linear-gradient(60deg, rgb(119, 154, 160) 50%, rgb(112, 150, 156) 50%);
+        -ms-background-image: linear-gradient(60deg, rgb(119, 154, 160) 50%, rgb(112, 150, 156) 50%);
+        background-image: linear-gradient(60deg, rgb(119, 154, 160) 50%, rgb(112, 150, 156) 50%);
+        color: #ffffff;
+        height: 400px
+    }
+    
+    #section_second {
+        margin-top: 25%;
+        position: relative
+    }
+    /*
+@media all and (max-width: 660px) {
+    header h1#logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+    header nav {
+        display: block;
+        float: none;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    header nav a {
+        line-height: 50px;
+        margin: 0 10px;
+    }
+    header.smaller {
+        height: 75px;
+    }
+    header.smaller h1#logo {
+        height: 40px;
+        line-height: 40px;
+        font-size: 30px;
+    }
+    header.smaller nav {
+        height: 35px;
+    }
+    header.smaller nav a {
+        line-height: 35px;
+    }
+}
+*/
+</style>
+
+<!-- Image on top that reduces size with scroll-->
+<div class="brand">ruicosta.io</div>
+
+<div>
+    <div class="section" id="section_first">
+        <div class="logo" id="logo"></div>
+        <div class="floating">
+            <h1 style="margin:0">Delivering the Internet of Moving Things with <a href="https://veniam.com" target="_blank">Veniam</a> & building the platform for better education worldwide with <a href="https://academic.ieee.com" target="_blank">IEEE Academic</a>.</h1>
+        </div>
+        <p></p>
+    </div>
+    <div class="section" id="section_second">
+
+        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1I1JCKxo7UZfYI88F-GkEXjqRqY5vnpdXpanBxDvSBF4&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe>
+    </div>
+    <div class="section" style="background-color: #383f47">
+        <h1>Traveling the World</h1>
+        <div id="world-map" style="width: 100%; height: 500px"></div>
+    </div>
+
+</div>
+
+<style>
+    .jvectormap-legend-inner {
+        margin-bottom: 3px;
+    }
+    
+    .jvectormap-legend-cnt-h .jvectormap-legend-tick {
+        width: auto;
+        margin-right: 10px;
+    }
+    
+    .jvectormap-legend-cnt-h .jvectormap-legend-tick-text {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 13px;
+    }
+    
+    .jvectormap-legend-cnt-h .jvectormap-legend-tick-sample {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+</style>
+
+<script>
+    // Load this from mongoDB
+    $(function () {
+        $('#world-map').vectorMap({
+            map: 'world_mill',
+            scaleColors: ['#C8EEFF', '#0071A4'],
+            normalizeFunction: 'polynomial',
+            hoverOpacity: 0.7,
+            hoverColor: false,
+            markerStyle: {
+                initial: {
+                    fill: '#F8E23B',
+                    stroke: '#383f47'
+                }
+            },
+            backgroundColor: '#383f47',
+            markers: [
+                {
+                    latLng: [43.73, 7.41],
+                    name: 'Monaco'
+                }
+    ]
+        });
+    });
+</script>
+
+
+<!--
+<div class="reveal">
+
+    <div class="slides">
+
+
+        <section>
+            <section data-background="imgs/background.png" style="text-align:center">
+                <center>
+                    <h3 style="color:rgb(75, 73, 73);display: block;position: absolute;top: -20vh;left:0;right:0">ruicosta.io</h3>
+                </center>
+                <div style="margin-left:25%">
+                    <p style="color:rgb(75, 73, 73);text-align:right;font-size:28pt!important">A networks and communications <i>engineerpreneur</i> passionate about changing the World.
+                    </p>
+                    <br>
+                    <p style="color:rgb(75, 73, 73);text-align:right">Developing the Internet of Moving Things at <a href="http://veniam.com" target="_blank" style="color: white;background-color: #ff5e99;">Veniam</a>
+                        <br> Creating the platform for better education worldwide with
+                        <br><a href="http://academic.ieee.org" target="_blank" style="color: white;background-color: #ff5e99;">IEEE Academic</a>
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section style="text-align:center">
+                <center>
+                    <h3 style="display: block;position: absolute;top: -20vh;left:0;right:0">ruicosta.social</h3>
+                </center>
+
+                <div class="row" style="">
+                    <a href="http://facebook.com/ruiccosta" target="_blank"><i class="icon-facebook-squared"></i></a>
+                    <a href="http://instagram.com/ruicostapt" target="_blank"><i class="icon-instagramm"></i></a>
+                    <a href="http://twitter.com/ruicostatwit" target="_blank"><i class="icon-twitter-squared"></i></a>
+                    <a href="http://pt.linkedin.com/in/ruimiguelcosta/" target="_blank"><i class="icon-linkedin-squared"></i></a>
+                    <i class="icon-feather" target="_blank"></i>
+                </div>
+    </div>
+
+
+    </section>
+    </section>
+
+
+</div>
+
+</div>-->

@@ -1,45 +1,161 @@
-<div class="reveal">
+<!doctype html>
+<html>
 
-    <div class="slides">
+<!--
+  
+  https://certbot.eff.org/
+  https://www.npmjs.com/package/mailgen
+-->
+<head>
+  <title>
+    ruicosta.io
+  </title>
+  <meta charset="utf-8" />
 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
 
-        <section>
-            <section data-background="imgs/background.png" style="text-align:center">
-                <center>
-                    <h3 style="color:rgb(75, 73, 73);display: block;position: absolute;top: -20vh;left:0;right:0">ruicosta.io</h3>
-                </center>
-                <div style="margin-left:25%">
-                    <p style="color:rgb(75, 73, 73);text-align:right;font-size:28pt!important">A networks and communications <i>engineerpreneur</i> passionate about changing the World.
-                    </p>
-                    <br>    
-                    <p style="color:rgb(75, 73, 73);text-align:right">Developing the Internet of Moving Things at <a href="http://veniam.com" target="_blank" style="color: white;background-color: #ff5e99;">Veniam</a><br>
-                        Creating the platform for better education worldwide with<br><a href="http://academic.ieee.org" target="_blank"  style="color: white;background-color: #ff5e99;">IEEE Academic</a>
-                    </p>
+<style>
+  body {
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .section_first {
+    background-color: #3B97A6;
+    -moz-background-image: linear-gradient(60deg, rgb(119, 154, 160) 50%, rgb(112, 150, 156) 50%);
+    -webkit-background-image: linear-gradient(60deg, rgb(119, 154, 160) 50%, rgb(112, 150, 156) 50%);
+    -o-background-image: linear-gradient(60deg, rgb(119, 154, 160) 50%, rgb(112, 150, 156) 50%);
+    -ms-background-image: linear-gradient(60deg, rgb(119, 154, 160) 50%, rgb(112, 150, 156) 50%);
+    background-image: linear-gradient(60deg, rgb(119, 154, 160) 50%, rgb(112, 150, 156) 50%);
+    color: #ffffff;
+    height: 400px
+  }
+  
+  .logo {
+    background: url(https://scontent.flis2-1.fna.fbcdn.net/hphotos-xfp1/t31.0-8/12493425_10207011963250683_1350355932394677653_o.jpg) no-repeat;
+    background-size: 720px 480px;
+    background-position: -160px 0px;
+    height: 280px;
+    width: 280px;
+    position: absolute;
+    border-radius: 50%;
+    border: 10px solid rgb(112, 150, 156);
+    margin: 20px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .floating {
+    right: -48.5%;
+    bottom: 28.5%;
+    position: relative;
+    top: 300px;
+    font-size: 10px;
+    width: 50%;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .brand {
+    position: fixed;
+    right: 10%;
+    bottom: 28.5%;
+    z-index: 0;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #000;
+    font-size: 50px;
+    line-height: 140px;
+    font-weight: 100;
+    text-align: right;
+  }
+  
+  .thumbnail {
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    text-align: center;
+    padding-top: calc(50% - 30px);
+  }
+  
+  .btn-sq-lg {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  
+  .btn-sq {
+  width: 100px !important;
+  height: 100px !important;
+  font-size: 10px;
+}
 
-                </div>
+.btn-sq-sm {
+  width: 50px !important;
+  height: 50px !important;
+  font-size: 10px;
+}
 
-            </section>
+.btn-sq-xs {
+  width: 25px !important;
+  height: 25px !important;
+  padding:2px;
+}
+</style>
 
-            <section style="text-align:center">
-                <center>
-                    <h3 style="display: block;position: absolute;top: -20vh;left:0;right:0">ruicosta.social</h3>
-                </center>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section_first">
 
-                <div class="row" style="">
-                    <a href="http://facebook.com/ruiccosta" target="_blank"><i class="icon-facebook-squared"></i></a>
-                    <a href="http://instagram.com/ruicostapt" target="_blank"><i class="icon-instagramm"></i></a>
-                    <a href="http://twitter.com/ruicostatwit" target="_blank"><i class="icon-twitter-squared"></i></a> 
-                    <a href="http://pt.linkedin.com/in/ruimiguelcosta/" target="_blank"><i class="icon-linkedin-squared"></i></a> 
-                    <i class="icon-feather" target="_blank"></i> 
-                </div>
+        <div class="logo" id="logo"></div>
+        <div class="floating">
+          <h1 style="margin:0;font-size: 20px;">Delivering the Internet of Moving Things with <a href="https://veniam.com" target="_blank">Veniam</a> & building the platform for better education worldwide with <a href="https://academic.ieee.com" target="_blank">IEEE Academic</a>.</h1>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 brand">
+        ruicosta.io
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <p>
+          <a href="#" class="btn btn-sq-lg btn-primary">
+            <i class="fa fa-user fa-5x"></i>
+            <br/> Demo Primary
+            <br>Button
+          </a>
+          <a href="#" class="btn btn-sq-lg btn-success">
+            <i class="fa fa-user fa-5x"></i>
+            <br/> Demo Success
+            <br>Button
+          </a>
+          <a href="#" class="btn btn-sq-lg btn-info">
+            <i class="fa fa-user fa-5x"></i>
+            <br/> Demo Info
+            <br>Button
+          </a>
+        </p>
+      </div>
     </div>
 
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap-responsive.min.css" />
+</body>
 
-    </section>
-    </section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-
-</div>
-
-</div>
-
+</html>

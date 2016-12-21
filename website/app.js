@@ -13,4 +13,8 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
+app.get('/old', function (req, res) {
+    res.render('index_test');
+});
+
 app.listen(port);

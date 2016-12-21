@@ -14,10 +14,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" href="css/reveal.min.css">
-    <link rel="stylesheet" href="css/theme/default.css" id="theme">
-    <link rel="stylesheet" href="css/hint.min.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/jquery-jvectormap-2.0.3.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
+    <script src="js/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="js/jquery-jvectormap-world-mill.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
     <style>
         body,
         h1,
@@ -25,23 +29,22 @@
         h3,
         h4,
         p {
-            font-family: Lato !important;
+            font-family: "Maven Pro" !important;
+            font-weight: lighter;
         }
+        
         h2 {
             font-size: 48pt !important;
         }
+        
         p {
             font-size: 20pt !important;
         }
-        .reveal section img {
-            margin: 0px !important;
-            background: 0 !important;
-            border: 0!important;
-            box-shadow: 0 0 0 0 !important;
+        a{
+                text-decoration: none;
+            color:rgb(65, 92, 96)
         }
-        .slides {
-            width: 1080px!important;
-        }
+        body{margin:0}
     </style>
 
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -57,7 +60,7 @@
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
+                m = s.getElementsByTagName(o)[0];
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
@@ -75,19 +78,67 @@
     {{{body}}}
 
 </body>
-<script src="js/reveal.min.js"></script>
-
+<script src="js/fullpage.min.js"></script>
 <script>
-    // Configs based on: https://github.com/hakimel/reveal.js#configuration
-    Reveal.initialize({
-        controls: false,
-        progress: true,
-        history: false,
-        center: true,
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+            //Navigation
+            menu: '#menu',
+            lockAnchors: false,
+            anchors: ['firstPage', 'secondPage'],
+            navigation: false,
+            navigationPosition: 'right',
+            navigationTooltips: ['firstSlide', 'secondSlide'],
+            showActiveTooltip: false,
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom',
 
-        theme: Reveal.getQueryHash().theme,
-        transition: Reveal.getQueryHash().transition || 'default',
+            //Scrolling
+            css3: true,
+            scrollingSpeed: 700,
+            autoScrolling: true,
+            fitToSection: true,
+            fitToSectionDelay: 1000,
+            scrollBar: false,
+            easing: 'easeInOutCubic',
+            easingcss3: 'ease',
+            loopBottom: false,
+            loopTop: false,
+            loopHorizontal: true,
+            continuousVertical: false,
+            normalScrollElements: '#element1, .element2',
+            scrollOverflow: false,
+            touchSensitivity: 15,
+            normalScrollElementTouchThreshold: 5,
 
+            //Accessibility
+            keyboardScrolling: true,
+            animateAnchor: true,
+            recordHistory: true,
+
+            //Design
+            controlArrows: true,
+            verticalCentered: true,
+            resize: false,
+            sectionsColor: ['#ccc', '#fff'],
+            paddingTop: '3em',
+            paddingBottom: '10px',
+            fixedElements: '#header, .footer',
+            responsiveWidth: 0,
+            responsiveHeight: 0,
+
+            //Custom selectors
+            sectionSelector: '.section',
+            slideSelector: '.slide',
+
+            //events
+            onLeave: function (index, nextIndex, direction) {},
+            afterLoad: function (anchorLink, index) {},
+            afterRender: function () {},
+            afterResize: function () {},
+            afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {},
+            onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {}
+        });
     });
 </script>
 

@@ -39,8 +39,8 @@ textarea {
 }
 
 a {
-	color: #82b440;
-	text-decoration: underline;
+	color: #5bbaff;
+	text-decoration: none;
 }
 
 strong,
@@ -586,18 +586,16 @@ input[type="button"].small,
 
 #header {
 	color: white;
-	height: 4em;
 	bottom: 0px;
 	position: fixed;
 	width: 100%;
 	background: rgba(0, 0, 0, 0.5);
 }
 
-.container-header{
-	
+.container-header {
 	margin-left: auto;
-    margin-right: 0;
-    width: 60%;
+	margin-right: 0;
+	width: 60%;
 	text-align: right
 }
 
@@ -613,6 +611,7 @@ input[type="button"].small,
 	position: static;
 	right: none;
 	text-align: center;
+	    margin: 5px
 }
 
 #logo {
@@ -637,6 +636,15 @@ input[type="button"].small,
 	position: absolute;
 	top: 0;
 	right: 0;
+}
+
+#nav .number {
+	font-size: 20pt;
+	display: block
+}
+
+#nav .legend {
+	font-size: 10pt
 }
 
 #nav > ul {
@@ -726,7 +734,7 @@ input[type="button"].small,
 #banner h2 {
 	display: inline-block;
 	padding: 0.50em 0.30em;
-	background: #82b440;
+	background: #505050;
 	font-size: 3em;
 	font-weight: 400;
 }
@@ -738,12 +746,11 @@ input[type="button"].small,
 	text-transform: uppercase;
 	font-size: 1.6em;
 	font-weight: 600;
-       color: white;
-    background: rgba(0, 0, 0, 0.5);
-    padding-bottom: 12px;
-	    padding-right: 5px;
-	margin:0;
-	
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
+	padding-bottom: 12px;
+	padding-right: 5px;
+	margin: 0;
 }
 
 #banner span {
@@ -814,7 +821,7 @@ input[type="button"].small,
 	position: relative;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 3em 0em 3em 0em;
+	padding: 3em 0em 6em 0em;
 	color: inherit;
 	opacity: .40;
 }

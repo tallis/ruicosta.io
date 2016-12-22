@@ -47,7 +47,6 @@ strava.athletes.stats(config.strava, function (err, payload) {
 });
 
 
-
 // FLIGHTS
 curl.request(config.flights, function (err, parts) {
     parts = parts.split('\n');

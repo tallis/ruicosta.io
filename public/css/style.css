@@ -529,7 +529,7 @@ input[type="button"].small,
 .wrapper.style2 .major .byline {
 	letter-spacing: normal;
 	line-height: 1.6em;
-	text-transform: capitalize;
+	text-transform: none;
 	font-size: 1.4em;
 }
 

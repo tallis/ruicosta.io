@@ -24,21 +24,31 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
 
 <script>
 	$.get("/api/1.0/runs", function (data) {
+		console.log(data)
 		$("#runs").html(data.runs.ytd_runs);
 		$("#running").html(parseInt(data.runs.ytd_distance));
+		$("#runs_total").html(data.runs.total_runs);
+		$("#running_total").html(parseInt(data.runs.total_distance));
 	});
 	
 	$.get("/api/1.0/flights", function (data) {
-		$("#flights").html(parseInt(data.flights_info.flights.total));
-		$("#flightmiles").html(parseInt(data.flights_info.distance.total_miles));
+		console.log(data)
+		$("#flights").html(parseInt(data.ytd.flights_info.flights.total));
+		$("#flightmiles").html(parseInt(data.ytd.flights_info.distance.total_miles));		$("#flights_total").html(parseInt(data.total.flights_info.flights.total));
+		$("#flightmiles_total").html(parseInt(data.total.flights_info.distance.total_miles));
 	});
 	
-	$.get("/api/1.0/posts", function (data) {
-		$("#posts").html(parseInt(data.length));
-		$("#flightmiles").html(parseInt(data.flights_info.distance.total_miles));
+	$.get("/api/1.0/posts", function (posts) {
+		$("#posts").html(parseInt(posts.ytd_count));
+		$("#posts_total").html(parseInt(posts.total_count));
+		for(var i = 0; i < parseInt(posts.stories.length);i++){
+			$("#posts_display").append('<h3><a href="'+data[i].link+'">'+posts.stories[i].title+'</a></h3><div id="date">Posted on '+moment(posts.stories[i].date).format("MMMM, DD, YYYY")+'</div>');
+		}
+		
 	});
 </script>
 

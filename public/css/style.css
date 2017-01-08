@@ -647,6 +647,26 @@ input[type="button"].small,
 	font-size: 10pt
 }
 
+#nav .number_past {
+	font-size: 12pt;
+	display: block;
+	    margin-top: 10px;
+}
+
+#nav .legend_past {
+	font-size: 8pt;
+	line-height: 1em;
+	    display: block;
+    margin-bottom: 4px;
+}
+#nav .legend_past a{
+	color: inherit;
+    line-height: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
 #nav > ul {
 	margin: 0;
 }
@@ -821,7 +841,7 @@ input[type="button"].small,
 	position: relative;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 3em 0em 6em 0em;
+	padding: 3em 0em 12em 0em;
 	color: inherit;
 	opacity: .40;
 }
@@ -862,4 +882,27 @@ input[type="button"].small,
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-weight: 700;
+}
+
+/* POSTS */ 
+#posts_footer{
+	margin-top:20px;
+	font-size: 10pt;
+	text-align: center;
+}
+
+#posts_display {
+	text-align: center
+}
+
+#posts_display h3{
+	margin-top:30px;	
+}
+
+#posts_display a{
+	text-decoration: none;
+}
+
+.legend_past{
+	line-height: 1em
 }

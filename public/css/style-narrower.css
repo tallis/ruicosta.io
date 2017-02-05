@@ -136,6 +136,7 @@
 			top: 0;
 			width: 80px;
 			z-index: 2;
+			display:none
 		}
 
 			#titleBar .toggle:before {

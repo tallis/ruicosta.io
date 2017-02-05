@@ -147,7 +147,8 @@ router.get('/posts', function (req, res, next) {
       posts.stories = [];
       for (var i = 0; i < rss.length; i++) {
       
-        if (moment(rss[i].date).diff(current_year, "year") == 0) {
+        if (moment(rss[i].date).diff(moment.now(), "year") == 0) {
+  
           // Counting how many posts were posted in the current year - rui
           posts.ytd_count += 1;
         }

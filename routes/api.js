@@ -140,7 +140,7 @@ router.get('/posts', function (req, res, next) {
     ytd_count: 0
   }
   var current_year = new Date().getFullYear();
-  parser('https://medium.com/feed/@vanschneider', function (err, rss) {
+  parser('https://medium.com/feed/@ruicostapt', function (err, rss) {
     if (err) {
       console.log(err);
     } else {

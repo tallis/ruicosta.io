@@ -581,6 +581,11 @@ input[type="button"].small,
 	border-color: white;
 }
 
+.wrapper.style6 {
+		padding: 6em 0 2em 0;
+
+	color: white;
+}
 
 /* Header */
 

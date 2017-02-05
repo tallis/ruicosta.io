@@ -33,6 +33,10 @@
 		$("#running").html(parseInt(data.runs.ytd_distance));
 		$("#runs_total").html(data.runs.total_runs);
 		$("#running_total").html(parseInt(data.runs.total_distance));
+		$("runs_mobile").html(data.runs.ytd_runs);
+		$("#running_mobile").html(parseInt(data.runs.ytd_distance));
+		$("#runs_total_mobile").html(data.runs.total_runs);
+		$("#running_total_mobile").html(parseInt(data.runs.total_distance));
 	});
 	
 	$.get("/api/1.0/flights", function (data) {
@@ -40,16 +44,33 @@
 		$("#flights").html(parseInt(data.ytd.flights_info.flights.total));
 		$("#flightmiles").html(parseInt(data.ytd.flights_info.distance.total_miles));		$("#flights_total").html(parseInt(data.total.flights_info.flights.total));
 		$("#flightmiles_total").html(parseInt(data.total.flights_info.distance.total_miles));
+		$("#flights_mobile").html(parseInt(data.ytd.flights_info.flights.total));
+		$("#flightmiles_mobile").html(parseInt(data.ytd.flights_info.distance.total_miles));		$("#flights_total_mobile").html(parseInt(data.total.flights_info.flights.total));
+		$("#flightmiles_total_mobile").html(parseInt(data.total.flights_info.distance.total_miles));
 	});
 	
 	$.get("/api/1.0/posts", function (posts) {
+
 		$("#posts").html(parseInt(posts.ytd_count));
 		$("#posts_total").html(parseInt(posts.total_count));
+				$("#posts_mobile").html(parseInt(posts.ytd_count));
+		$("#posts_total_mobile").html(parseInt(posts.total_count));
 		for(var i = 0; i < parseInt(posts.stories.length);i++){
-			$("#posts_display").append('<h3><a href="'+data[i].link+'">'+posts.stories[i].title+'</a></h3><div id="date">Posted on '+moment(posts.stories[i].date).format("MMMM, DD, YYYY")+'</div>');
+			$("#posts_display").append('<h3><a href="'+posts.stories[i].link+'">'+posts.stories[i].title+'</a></h3><div id="date">Posted on '+moment(posts.stories[i].date).format("MMMM, DD, YYYY")+'</div>');
 		}
 		
 	});
+</script>
+	
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57032657-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
 
 </html>

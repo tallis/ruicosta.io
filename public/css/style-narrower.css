@@ -4,6 +4,12 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
+/* Added by Rui*/
+
+.container-header {
+	width: 100%;
+	font-size: smaller;
+}
 /* Basic */
 
 	#skel-layers-wrapper {

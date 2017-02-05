@@ -10,6 +10,24 @@
 	width: 100%;
 	font-size: smaller;
 }
+
+#mobileOKRs{
+	display: inline !important;
+}
+#mobileOKRs .container{
+	padding-top:10px
+}
+
+#mobileOKRs li{
+	margin-top:10px
+}
+
+#mobileOKRs .number{
+	font-size: 20pt
+}
+#mobileOKRs .legend{
+	font-size: 20pt
+}
 /* Basic */
 
 	#skel-layers-wrapper {

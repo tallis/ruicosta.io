@@ -6,6 +6,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
+	<meta name="google-site-verification" content="cVuHxVbq1AS-8FrskvwprttekKk5iavBzU_z2bpMEyI" />
 	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.dropotron.min.js"></script>
@@ -38,7 +39,7 @@
 		$("#runs_total_mobile").html(data.runs.total_runs);
 		$("#running_total_mobile").html(parseInt(data.runs.total_distance));
 	});
-	
+
 	$.get("/api/1.0/flights", function (data) {
 		console.log(data)
 		$("#flights").html(parseInt(data.ytd.flights_info.flights.total));
@@ -48,7 +49,7 @@
 		$("#flightmiles_mobile").html(parseInt(data.ytd.flights_info.distance.total_miles));		$("#flights_total_mobile").html(parseInt(data.total.flights_info.flights.total));
 		$("#flightmiles_total_mobile").html(parseInt(data.total.flights_info.distance.total_miles));
 	});
-	
+
 	$.get("/api/1.0/posts", function (posts) {
 
 		$("#posts").html(parseInt(posts.ytd_count));
@@ -58,10 +59,10 @@
 		for(var i = 0; i < parseInt(posts.stories.length);i++){
 			$("#posts_display").append('<h3><a href="'+posts.stories[i].link+'">'+posts.stories[i].title+'</a></h3><div id="date">Posted on '+moment(posts.stories[i].date).format("MMMM, DD, YYYY")+'</div>');
 		}
-		
+
 	});
 </script>
-	
+
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

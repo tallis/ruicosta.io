@@ -13,7 +13,7 @@ showFullContent = false
 Five lessons I learned in 2016 about effective personal communication and growth
 -------------------------
 
-[picture]
+![Let's make better mistakes tomorrow](/img/2016mistakes.jpeg)
 
 2016 was quite an intense year. 
 
@@ -34,33 +34,36 @@ On the **personal side**, it was a transformative year where past-frustrations l
 
 Naturally, that didn’t happen out of the blue. A mixture of coaching, personal experiences, and countless hours of thinking allowed me to distil the following…
 
-# **5 lessons about effective personal communication and scalability**
+## **5 lessons about effective personal communication and scalability**
 
-## **1) Building for sustainable growth, both personal and professional, consists of designing every single action to replicable, atomic, and strictly necessary.**
+**1) Building for sustainable growth, both personal and professional, consists of designing every single action to replicable, atomic, and strictly necessary.**
 
 Buckling up as many tasks in parallel as possible, led me to assume I was optimizing for *SPEED*.
 
 Speeding things down helped me to take the necessary steps and freeing up enough time to think, and absorb, the **WHY, HOW,** and **WHAT** of my actions.
 
-## **2) Communicating effectively is made out of repeating multiple times and getting others to repeat it back. \*Again, communicating effectively is made out of repeating multiple times and getting others to repeat it back.\***
+
+**2) Communicating effectively is made out of repeating multiple times and getting others to repeat it back. \*Again, communicating effectively is made out of repeating multiple times and getting others to repeat it back.\***
 
 Having a fast-paced type of living, led me to assume that saying things once would give people the necessary understanding of what I was trying to communicate.
 
 Confirming that I communicated clearly helped me to keep moving with the right foundations and context in place.
 
-## 3) Defining goals that are not specific, measurable, actionable, relevant, and limited in time augments the probability achievement failure.
+**3) Defining goals that are not specific, measurable, actionable, relevant, and limited in time augments the probability achievement failure.**
 
 Setting clunky and poorly planned, yet oddly ambitious, goals, led me to assume that all necessary steps were predicted.
 
 Thinking thoroughly every single step of the way of a journey towards a goal, helped me to start delivering on the path I was setting myself to cross.
 
-## **4) Silence opens space for observation and understanding.**
+
+
+**4) Silence opens space for observation and understanding.**
 
 Trying to rush reactions and quickly share my point of view, led me to block important time that was necessary for absorbing what was just shared.
 
 Enjoying the silence in a conversation, helped me to think how what was just shared resonated with me and sharply and bluntly formulate my point of view.
 
-## 5) Deeming one’s action as adequate or not is heavily dependent on the level of context we provide.
+**5) Deeming one’s action as adequate or not is heavily dependent on the level of context we provide.**
 
 Assuming everyone had the necessary context when performing an action, led me to interpret things differently than it was intended by the first person.
 
@@ -75,17 +78,13 @@ These lessons helped me understand that in most of my actions**, speed is achiev
 
 I learned that:
 
-1. Setting goals is **as important as configuring ourselves to be committed to achieving them;**
-2. Reducing the number of unattainable and poorly-designed goals **takes time and discipline;**
-3. Letting ourselves down and frustrated for not achieving our goals should **help us improve our systems and not dropping them by design**.
+1. Setting goals is as important as configuring ourselves to be committed to achieving them;
+2. Reducing the number of unattainable and poorly-designed goals takes time and discipline;
+3. Letting ourselves down and frustrated for not achieving our goals should help us improve our systems and not dropping them by design.
 
 And that’s how I started managing my goals, personal communication, and growth in 2017.
 
 For me, building systems, processes, and routines around the idea that we can become a better version of ourselves comes down to the understanding that such are designed by us, the only stakeholder for setting the direction that keeps us moving forward.
 
-**Personal OKR #3: Have published at least 10 personal blog posts by December 25, 2017.**
-
-OKR #3 was there in **2015** **(!)** and **2016 (!!)**, yet I failed to execute *(read lesson #3)*.
 
 > “Whatever your leave unsaid will be unsaid forever, even if you say it later.”
-> // shared by a very close friend

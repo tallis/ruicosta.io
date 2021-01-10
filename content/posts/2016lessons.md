@@ -93,3 +93,10 @@ For me, building systems, processes, and routines around the idea that we can be
 
 
 > “Whatever your leave unsaid will be unsaid forever, even if you say it later.”
+
+
+
+
+___
+
+Do you have feedback or have seen something wrong? Edit or comment this page on [GitHub](https://github.com/tallis/ruicosta.io/blob/master/content/posts/2016lessons.md).

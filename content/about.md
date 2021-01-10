@@ -42,3 +42,7 @@ _____
 
 #### Patents
 * Google Patents has a good enough up-to-date directory [here](https://patents.google.com/?inventor=Rui+Costa,Rui+Miguel+Correia+E+Costa&assignee=Veniam+Inc).
+
+___
+
+Do you have feedback or have seen something wrong? Edit or comment this page on [GitHub](https://github.com/tallis/ruicosta.io/blob/master/content/about.md).

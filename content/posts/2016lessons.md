@@ -1,5 +1,5 @@
 +++
-title = "2016lessons"
+title = "5 lessons about effective communication and personal growth"
 date = "2017-02-07T19:53:51Z"
 author = "Rui Costa"
 authorTwitter = "ruicosta_io" #do not include @
@@ -10,10 +10,10 @@ description = ""
 showFullContent = false
 +++
 
-Five lessons I learned in 2016 about effective personal communication and growth
+
 -------------------------
 
-![Let's make better mistakes tomorrow](/img/2016mistakes.jpeg)
+![Let's make better mistakes tomorrow](/img/2016mistakes.jpg)
 
 2016 was quite an intense year. 
 
@@ -34,7 +34,12 @@ On the **personal side**, it was a transformative year where past-frustrations l
 
 Naturally, that didn’t happen out of the blue. A mixture of coaching, personal experiences, and countless hours of thinking allowed me to distil the following…
 
-## **5 lessons about effective personal communication and scalability**
+
+_____
+
+
+
+## **5 lessons about effective communication and personal growth**
 
 **1) Building for sustainable growth, both personal and professional, consists of designing every single action to replicable, atomic, and strictly necessary.**
 

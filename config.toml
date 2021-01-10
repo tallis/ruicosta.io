@@ -61,7 +61,7 @@ disableHugoGeneratorInject = false
 
   homeSubtitle = "CTO Veniam | Co-founder IEEE Academic"
   homeSubtitleFirst = "CTO Veniam | Co-founder IEEE Academic"
-  homeSubtitleSecond = "Not the football player. Not the cyclist. "
+  homeSubtitleSecond ='<a href="/other/">Not the Rui Costa you are looking for?</a>'
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #
@@ -119,10 +119,9 @@ disableHugoGeneratorInject = false
 
   # Uncomment this if you want a portrait on your start page
   #
-  # [params.portrait]
-  #   path     = "/img/image.jpg"
-  #   alt      = "Portrait"
-  #   maxWidth = "50px"
+  [params.portrait]
+     path     = "/img/rui.jpg"
+     maxWidth = "50%"
 
   # Social icons
   [[params.social]]

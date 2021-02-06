@@ -1,0 +1,9 @@
+name = "website"
+type = "webpack"
+account_id = "${{secrets.CF_ACCOUNT_ID}}"
+workers_dev = true
+route = "ruicosta.io/*"
+zone_id = "${{secrets.CF_ZONE_ID}}"
+
+[site]
+bucket = "./public"

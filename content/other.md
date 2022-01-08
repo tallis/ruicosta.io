@@ -15,6 +15,6 @@ Here's a list of other Rui Costas out there, I've met throughout the years:
 * Rui Costa | Keywords: cycling
 * Rui Costa | Keywords: Codavel, Streambolico, network coding
 * Rui Costa | Keywords: Ubiwhere
-
+* Rui Costa | Keywords: Weak Multiplex Percolation
 
 Known more Rui Costas out there? Edit this page on [GitHub](https://github.com/tallis/ruicosta.io/blob/master/content/other.md).

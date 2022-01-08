@@ -6,7 +6,7 @@
             {{ end }}
 
             <h1>{{ .Site.Title }}</h1>
-            {{- with .Site.Params.homeSubtitleFirst }}
+            {{- with .Site.Params.homeSubtitleFirst| safeHTML }}
                 <p>{{.}}</p>
             {{- end }}
 

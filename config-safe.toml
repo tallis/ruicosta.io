@@ -43,14 +43,14 @@ disableHugoGeneratorInject = false
   hrefTargetBlank = true
 
 [taxonomies]
-  tag = "tags"
+  tag      = "tags"
   category = "categories"
-  series = "series"
+  series   = "series"
 
 [params]
-  dateform = "Jan 2, 2006"
-  dateformShort = "Jan 2"
-  dateformNum = "2006-01-02"
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
 
   # Metadata mostly used in document's head
@@ -59,7 +59,8 @@ disableHugoGeneratorInject = false
   keywords = ""
   images = [""]
 
-  homeSubtitleFirst = 'CTO <a href="https://veniam.com" target="_blank">Veniam</a> | Co-founder IEEE Academic/<a href="https://youracademic.org" target="_blank">YourAcademic</a>'
+  homeSubtitle = "CTO Veniam | Co-founder IEEE Academic"
+  homeSubtitleFirst = "CTO Veniam | Co-founder IEEE Academic"
   homeSubtitleSecond ='<a href="/other/">Not the Rui Costa you are looking for?</a>'
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
@@ -72,25 +73,29 @@ disableHugoGeneratorInject = false
 
   # Sharing buttons
   #
-  # There are a lot of buttons preconfigured. If you want to change them, generate the buttons here: https://sharingbuttons.io and add them into your own `layouts/partials/sharing-buttons.html`
+  # There are a lot of buttons preconfigured. If you want to change them,
+  # generate the buttons here: https://sharingbuttons.io
+  # and add them into your own `layouts/partials/sharing-buttons.html`
   #
   enableSharingButtons = true
 
-  # Integrate Javascript files or stylesheets by adding the url to the external assets or by linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
   #
   customCSS = []
-  customJS = []
+  customJS  = []
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
   #
-  justifyContent = false # Set "text-align: justify" to .post-content.
+  justifyContent = false  # Set "text-align: justify" to .post-content.
 
   # Default theme "light" or "dark"
   #
   defaultTheme = "dark"
   themeColor = "#252627"
 
-  # Custom footer If you want, you can easily override the default footer with your own content.
+  # Custom footer 
+  # If you want, you can easily override the default footer with your own content. 
   #
    footerLeft = " "
   footerRight = " "
@@ -103,54 +108,59 @@ disableHugoGeneratorInject = false
     theme = "#252627"
 
   [params.logo]
-    logoText = "ruicosta.io"
+    logoText     = "ruicosta.io"
     logoHomeLink = "/"
-    # Set true to remove the logo cursor entirely. logoCursorDisabled = false Set to a valid CSS color to change the cursor in the logo. logoCursorColor = "#67a2c9" Set to a valid CSS time value 
-    # to change the animation duration, "0s" to disable. logoCursorAnimate = "2s"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
 
   # Uncomment this if you want a portrait on your start page
   #
   [params.portrait]
-     path = "/img/rui.jpg"
+     path     = "/img/rui.jpg"
      maxWidth = "50%"
 
   # Social icons
   [[params.social]]
     name = "twitter"
-    url = "https://twitter.com/ruicosta_io"
+    url  = "https://twitter.com/ruicosta_io"
 
   # [[params.social]]
-  #   name = "email" url = "mailto:nobody@example.com"
+  #   name = "email"
+  #   url  = "mailto:nobody@example.com"
 
   [[params.social]]
     name = "github"
-    url = "https://github.com/tallis"
+    url  = "https://github.com/tallis"
 
   [[params.social]]
     name = "linkedin"
-    url = "https://www.linkedin.com/ruicostapt"
+    url  = "https://www.linkedin.com/ruimcosta"
 
   [[params.social]]
     name = "stackoverflow"
-    url = "https://stackoverflow.com/users/1681284/rui-costa"
+    url  = "https://stackoverflow.com/users/1681284/rui-costa"
 
 [languages]
   [languages.en]
-    subtitle = "ruicosta.io | Rui Costa personal website"
-    weight = 1
+    subtitle  = "ruicosta.io | Rui Costa personal website"
+    weight    = 1
     copyright = " "
 
   [languages.fr]
-    subtitle = "ruicosta.io | Rui Costa personal website"
-    weight = 2
+    subtitle  = "ruicosta.io | Rui Costa personal website"
+    weight    = 2
     copyright = " "
 
 [menu]
   [[menu.main]]
     identifier = "about"
-    name = "About"
-    url = "about/"
+    name       = "About"
+    url        = "about/"
   [[menu.main]]
     identifier = "posts"
-    name = "Posts"
-    url = "posts/"
+    name       = "Posts"
+    url        = "posts/"

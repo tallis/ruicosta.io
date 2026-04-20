@@ -59,8 +59,8 @@ disableHugoGeneratorInject = false
   keywords = ""
   images = [""]
 
-  homeSubtitleFirst = 'CTO <a href="https://veniam.com" target="_blank">Veniam</a> | Co-founder IEEE Academic/<a href="https://youracademic.org" target="_blank">YourAcademic</a>'
-  homeSubtitleSecond ='<a href="/other/">Not the Rui Costa you are looking for?</a>'
+  homeSubtitleFirst = 'CTO <a href="https://indiecampers.com" target="_blank" rel="noopener">Indie Campers</a> | prev. Chief Architect <a href="https://www.nexar-ai.com/" target="_blank" rel="noopener">Nexar</a>, CTO <a href="https://veniam.com/" target="_blank" rel="noopener">Veniam</a> | Co-founder IEEE Academic/<a href="https://youracademic.org" target="_blank" rel="noopener">YourAcademic</a>'
+  homeSubtitleSecond = 'My thoughts on AI: <a href="https://ruicosta.ai" target="_blank" rel="noopener">ruicosta.ai</a> &nbsp;·&nbsp; <a href="/other/">Not the Rui Costa you are looking for?</a>'
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #

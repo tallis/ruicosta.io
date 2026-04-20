@@ -28,6 +28,7 @@ jobs:
       - name: Deploy to Cloudflare Workers (Static Assets)
         uses: cloudflare/wrangler-action@v3
         with:
+          wranglerVersion: '4.26.1'
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           command: deploy --config wrangler.jsonc

@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "ruicosta-io",
+  "name": "website",
   "compatibility_date": "2025-04-01",
   "account_id": "2e52de9f2b517ac6865232fe1598542f",
   "workers_dev": true,

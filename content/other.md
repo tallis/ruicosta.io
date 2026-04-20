@@ -1,6 +1,7 @@
 +++
 title = "Other"
-date = "2026-04-21"
+date = "2021-01-01"
+aliases = ["other"]
 [ author ]
   name = "Rui Costa"
 +++

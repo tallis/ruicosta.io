@@ -8,8 +8,8 @@
     "directory": "./public"
   },
   "routes": [
-    { "pattern": "ruicosta.io", "custom_domain": true },
-    { "pattern": "www.ruicosta.io", "custom_domain": true }
+    { "pattern": "ruicosta.io", "custom_domain": true, "override_existing_dns_record": true },
+    { "pattern": "www.ruicosta.io", "custom_domain": true, "override_existing_dns_record": true }
   ],
   "observability": { "enabled": true }
 }

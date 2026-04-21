@@ -43,4 +43,4 @@ Here is a running list of other Rui Costas I&rsquo;ve met, worked alongside, or 
 
 ---
 
-Know another Rui Costa I should add? Edit this page on [GitHub](https://github.com/tallis/ruicosta.io/blob/master/content/other.md) or ping me at [hello@ruicosta.ai](mailto:hello@ruicosta.ai).
+Know another Rui Costa I should add? Edit this page on [GitHub](https://github.com/tallis/ruicosta.io/blob/master/content/other.md) or ping me at [hello@ruicosta.io](mailto:hello@ruicosta.io).

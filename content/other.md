@@ -12,15 +12,15 @@ Here is a running list of other Rui Costas I&rsquo;ve met, worked alongside, or 
 
 ### In technology
 
-* **Rui Costa**. President & CEO, Allen Institute (neuroscience + computation). Previously Director of Champalimaud Research and Professor at Columbia.
+* **Rui Costa**. President and CEO, Allen Institute (neuroscience + computation). Previously Director of Champalimaud Research and Professor at Columbia.
   [LinkedIn](https://www.linkedin.com/in/drruicosta) · [Allen Institute](https://alleninstitute.org/)
-* **Rui Ponte Costa**. Associate Professor in Computational Neuroscience & Machine Learning, University of Oxford (prev. Bristol). Leads the Neural & Machine Learning group.
+* **Rui Ponte Costa**. Associate Professor in Computational Neuroscience and Machine Learning, University of Oxford (prev. Bristol). Leads the Neural and Machine Learning group.
   [Oxford profile](https://www.dpag.ox.ac.uk/team/rui-ponte-costa) · [Scholar](https://scholar.google.co.uk/citations?user=otGgQKQAAAAJ)
-* **Rui Costa**. CEO & co-founder, [Codavel](https://www.codavel.com/) (formerly Streambolico). Network-coding-based CDN for mobile apps.
+* **Rui Costa**. CEO and co-founder, [Codavel](https://www.codavel.com/) (formerly Streambolico). Network-coding-based CDN for mobile apps.
   [LinkedIn](https://www.linkedin.com/in/ruifcosta/) · [Medium](https://medium.com/@ruicosta_75534)
-* **Rui A. Costa**. Co-founder & CEO, [Ubiwhere](https://www.ubiwhere.com/). Smart-cities and Future-Internet R&D, FIWARE Foundation board.
+* **Rui A. Costa**. Co-founder and CEO, [Ubiwhere](https://www.ubiwhere.com/). Smart-cities and Future-Internet R+D, FIWARE Foundation board.
   [LinkedIn](https://www.linkedin.com/in/ruiarnaldo/)
-* **Rui Costa**. VP, Product Management & Customer Experience at Xfinity Mobile (Comcast). Previously Liberty Global, Qualcomm, Altice.
+* **Rui Costa**. VP, Product Management and Customer Experience at Xfinity Mobile (Comcast). Previously Liberty Global, Qualcomm, Altice.
   [LinkedIn](https://www.linkedin.com/in/ruijrdcosta/) · [Comcast feature](https://corporate.comcast.com/stories/rui-costa-changing-the-mobile-industry)
 * **Rui Costa**. Principal Solutions Developer, AWS. Distributed systems, edge/cloud, GenAI integrations.
   [LinkedIn](https://www.linkedin.com/in/rui-costa-nyc/) · [GitHub](https://github.com/rui-costa)
